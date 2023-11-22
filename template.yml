@@ -1,6 +1,6 @@
 myst: v1
-title: Simple LaTeX Book
-description: A
+title: Plain LaTeX Book
+description: A plain latex book theme
 version: '1.0.0'
 authors:
   - name: Rowan Cockett
