@@ -3,10 +3,13 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
-\usepackage{hyperref}
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{natbib}
+\usepackage{xcolor}
+\usepackage{changepage}
+\usepackage{framed}
+\usepackage{hyperref}
 \bibliographystyle{abbrvnat}
 
 % Make list items more compact
@@ -15,18 +18,16 @@
 
 [- IMPORTS -]
 
-% Style quotes
-\usepackage{xcolor}
-% Change links to basic
 \hypersetup{
   colorlinks,
   linkcolor={black},
   citecolor={black},
-  % urlcolor={blue!80!black}
   urlcolor={black}
 }
-\usepackage{framed}
-\definecolor{quoteshade}{rgb}{0.95,0.95,1}
+
+% Style quotes
+\definecolor{darkblue}{rgb}{0.0, 0.0, 0.55}
+\definecolor{quoteshade}{rgb}{0.95, 0.95, 1}
 \renewenvironment{quote}{%
   \def\FrameCommand{%
     \hspace{1pt}%
@@ -34,9 +35,9 @@
     {\color{quoteshade}\vrule width 4pt}%
     \colorbox{quoteshade}%
   }%
-  \MakeFramed{\advance\hsize-\width\FrameRestore}
+  \MakeFramed {\advance\hsize-\width \FrameRestore}%
   \noindent\hspace{-8pt}% disable indenting first paragraph
-  \begin{adjustwidth}
+  \begin{adjustwidth}{0pt}{0pt}% adjust as needed
   \vspace{2pt}\vspace{2pt}%
 }
 {%
