@@ -47,3 +47,4 @@ packages:
   - lmodern
   - natbib
   - xcolor
+  - changepage
